@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.libre-baskerville {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.box-effect{
+    border-radius: 37px;
+background: linear-gradient(190deg,#0e101e,#19253c);;
+box-shadow:  13px 13px 26px #19253c,
+             -13px -13px 26px #0e101e;
+}
+
+.btn-bg{
+    background-color: hsl(hsl(34.12deg 100% 50%));
+    color: hsl(var(--gray-100));
+    background-image: linear-gradient(to right, hsl(195deg 10.81% 14.51%) 0% 50%, hsl(45.95deg 100% 50.59%));
+    transition: .5s;
+    background-size: 200% auto;
+}
