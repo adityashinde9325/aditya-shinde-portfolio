@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    
+
+
+
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper slider-h">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide Slider">
+
+                        <img src="https://plusuae.com/uae-business-consultant/assets/images/sectors/Real-Estate.png">
+
+                    </div>
+                    <div class="swiper-slide Slider">
+                        <img src="https://plusuae.com/uae-business-consultant/assets/images/sectors/Real-Estate.png">
+                    </div>
+                    <div class="swiper-slide Slider">
+                        <img src="https://plusuae.com/uae-business-consultant/assets/images/sectors/Real-Estate.png">
+                    </div>
+                    <div class="swiper-slide Slider">
+                        <img src="https://plusuae.com/uae-business-consultant/assets/images/sectors/Real-Estate.png">
+                    </div>
+                    <div class="swiper-slide Slider">
+                        <img src="https://plusuae.com/uae-business-consultant/assets/images/sectors/Real-Estate.png">
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        
+    <style>
+     
+
+        /* Table Container and Wrapper for Responsiveness */
+        .table-container {
+            width: 100%;
+           max-width: 1100px;
+             margin: 40px auto;
+            
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Important for containing the shadow and border-radius */
+        }
+
+        /* This div ensures horizontal scrolling on small screens */
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        /* The actual Table */
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse; /* Remove double borders */
+            font-size: 0.9em;
+            text-align: left;
+            min-width: 600px; /* Ensures table doesn't get too small */
+        }
+
+        /* Table Header Styling */
+        .styled-table thead tr {
+            background-color: #4CAF50; /* A nice green color */
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid #dddddd; /* Light separator line */
+        }
+
+        /* Table Body Styling (Zebra Stripes) */
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3; /* Light gray for even rows */
+        }
+
+        /* Table Hover Effect */
+        .styled-table tbody tr:hover {
+            background-color: #e0f2f1; /* Lighter green/cyan on hover */
+            cursor: pointer;
+            transform: scale(1.005);
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Remove border for the last row */
+        .styled-table tbody tr:last-of-type {
+            border-bottom: none;
+        }
+
+        /* Highlight the 'Status' column */
+        .status-active {
+            color: #2e7d32; /* Dark Green */
+            font-weight: 600;
+            background-color: #e8f5e9; /* Very light green background */
+            border-radius: 4px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+
+        .status-pending {
+            color: #f9a825; /* Dark Yellow */
+            font-weight: 600;
+            background-color: #fffde7; /* Very light yellow background */
+            border-radius: 4px;
+            padding: 4px 8px;
+            display: inline-block;
+        }
+    </style>
+
+
+    <div class="table-container">
+        <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Project Name</th>
+                        <th>Client</th>
+                        <th>Budget ($)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>E-Commerce Platform</td>
+                        <td>Acme Corp</td>
+                        <td>55,000</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mobile App Redesign</td>
+                        <td>Beta Solutions</td>
+                        <td>32,000</td>
+                        <td><span class="status-pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>API Integration</td>
+                        <td>Gamma Tech</td>
+                        <td>18,500</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Data Migration</td>
+                        <td>Delta Services</td>
+                        <td>12,000</td>
+                        <td><span class="status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>UX Audit</td>
+                        <td>Epsilon Ltd</td>
+                        <td>5,000</td>
+                        <td><span class="status-pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    
+  <style>
+        /* 1. Global & Typography */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f4f7f4; /* Light background color from the image */
+            color: #333;
+        }
+
+        /* --- Existing Light Section Styles (UAE Features) --- */
+
+        .section-wrapper {
+            padding: 60px 20px;
+            text-align: center;
+            /* Subtle green background strip */
+            background: linear-gradient(to bottom, #e8f5e9 0%, #f4f7f4 20%);
+        }
+
+        /* Section Headings */
+        .subtitle {
+            color: #4CAF50; /* Green accent color */
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Line separators for subtitle */
+        .subtitle::before, .subtitle::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background-color: #4CAF50;
+            margin: 0 10px;
+        }
+
+        .title {
+            color: #1a4d2e; /* Dark green/black for contrast */
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        /* 2. Responsive Card Grid (Flexbox) */
+        .cards-container {
+            display: flex;
+            gap: 30px; /* Space between cards */
+            justify-content: center;
+            align-items: stretch; /* Ensures cards have equal height */
+            flex-wrap: wrap; /* Allows cards to wrap onto new lines on small screens */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 3. Individual Card Styling */
+        .feature-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Soft, pronounced shadow */
+            padding: 40px 30px;
+            flex: 1 1 300px; /* Allows card to grow, shrink, and maintains a minimum width of 300px */
+            max-width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 4. Icon Styling (Simulating the Gradient Look) */
+        .icon-wrapper {
+            margin-bottom: 25px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Apply the gradient directly to the icon text */
+        .icon-gradient {
+            font-size: 3rem;
+            display: inline-block;
+            /* Orange/Red Gradient from the image */
+            background: linear-gradient(45deg, #ff9900 0%, #ff5722 100%);
+            /* Use -webkit- prefixes for gradient on text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent; /* Fallback color */
+            filter: drop-shadow(0 4px 6px rgba(255, 100, 0, 0.2)); /* Soft shadow for subtle glow */
+        }
+
+        /* 5. Card Content */
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a4d2e;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #6b7280;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* 6. Button Styling */
+        .card-button {
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 6px;
+            background-color: #1a4d2e; /* Dark button color */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease, transform 0.1s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .card-button:hover {
+            background-color: #2e7d32; /* Slightly brighter green on hover */
+            transform: translateY(-1px);
+        }
+
+        /* 7. Mobile Adjustments (Stacks Cards) */
+        @media (max-width: 992px) {
+            .cards-container {
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            .feature-card {
+                /* On smaller screens, allow cards to take up full width for better readability */
+                flex: 1 1 100%; 
+                max-width: 500px; /* Maximize width on smaller viewports for better reading */
+                margin: 0 auto;
+            }
+        }
+
+        /* --- New Dark Section Styles (About Company) --- */
+
+        .dark-section-wrapper {
+            background-color: #1a1a1a; /* Dark background */
+            padding: 80px 20px;
+            color: #ffffff;
+        }
+
+        /* Two-Column Grid */
+        .dark-content-grid {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+            flex-wrap: wrap; /* Essential for responsiveness */
+            align-items: flex-start;
+        }
+
+        /* Left Text Column */
+        .text-column {
+            flex: 1 1 40%; /* Takes about 40% of the space */
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .dark-subtitle {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ff6e27; /* Orange/Red color */
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .dark-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .highlight-word {
+            color: #ff6e27; /* Highlight word color (Digital) */
+        }
+
+        .dark-description {
+            font-size: 1rem;
+            color: #cccccc;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 6px;
+            background-color: #ff6e27; /* Bright Orange */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            border: none;
+        }
+
+        .contact-button:hover {
+            background-color: #f75d16;
+        }
+
+
+        /* Right Cards Column */
+        .cards-column {
+            flex: 1 1 50%; /* Takes about 50% of the space */
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .dark-card {
+            background-color: #242424; /* Slightly lighter dark background for cards */
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #3b82f6; /* Blue border for the Mission/Vision cards */
+            text-align: left;
+        }
+
+        .card-icon-container {
+            width: 60px;
+            height: 60px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: 2px solid #3b82f6; /* Blue border around the white box */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-icon-container i {
+            font-size: 1.8rem;
+            color: #3b82f6; /* Blue icon color */
+        }
+
+        .card-heading {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+        }
+
+        .card-body-text {
+            font-size: 0.95rem;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+
+
+        /* Dark Section Media Queries (Responsiveness) */
+        @media (max-width: 1024px) {
+            .text-column, .cards-column {
+                flex-basis: 100%; /* Stack columns on smaller screens */
+                max-width: 100%;
+            }
+            .text-column {
+                text-align: center; /* Center text when stacked */
+            }
+            /* Center the text content within the column when stacked */
+            .dark-title {
+                font-size: 2.5rem;
+            }
+            .dark-description {
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+             .dark-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+
+    <div class="section-wrapper">
+        <div class="subtitle">THE ADVANTAGE</div>
+        <h2 class="title">Why UAE?</h2>
+
+        <div class="cards-container">
+
+            <!-- Card 1: 0% Personal Income Tax -->
+            <div class="feature-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-file-invoice-dollar icon-gradient"></i>
+                </div>
+                <div class="card-title">0% Personal Income Tax</div>
+                <p class="card-description">
+                    Plus a low 9% corporate tax with a high threshold.
+                </p>
+                <a href="#" class="card-button">Learn More</a>
+            </div>
+
+            <!-- Card 2: Strategic Global Hub -->
+            <div class="feature-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-route icon-gradient"></i>
+                </div>
+                <div class="card-title">Strategic Global Hub</div>
+                <p class="card-description">
+                    Gateway to Europe, Asia, and Africa
+                </p>
+                <a href="#" class="card-button">Learn More</a>
+            </div>
+
+            <!-- Card 3: 100% Foreign Ownership -->
+            <div class="feature-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-globe-africa icon-gradient"></i>
+                </div>
+                <div class="card-title">100% Foreign Ownership</div>
+                <p class="card-description">
+                    Available in many onshore and freezone sectors.
+                </p>
+                <a href="#" class="card-button">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- End of existing UAE feature section -->
+
+
+    <!-- New Section: About Company / Mission & Vision -->
+    <div class="dark-section-wrapper">
+        <div class="dark-content-grid">
+
+            <!-- Left Column: Text and Button -->
+            <div class="text-column">
+                <div class="dark-subtitle">ABOUT COMPANY</div>
+                <h2 class="dark-title">
+                    We are Innovating <span class="highlight-word">Digital</span> Experiences
+                </h2>
+                <p class="dark-description">
+                    Recognised as a top digital marketing agency and the best 
+                    digital marketing agency in Pune, we've helped businesses 
+                    across industries grow smarter and scale faster. Whether 
+                    you're looking for a results-driven SEO company in Pune, 
+                    expert PPC services in Pune, or a full-service digital 
+                    marketing company, Digitizematrix is your partner in precision.
+                </p>
+                <a href="#" class="contact-button">Let's Contact</a>
+            </div>
+
+            <!-- Right Column: Mission and Vision Cards -->
+            <div class="cards-column">
+
+                <!-- Mission Card -->
+                <div class="dark-card">
+                    <div class="card-icon-container">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="card-heading">Mission</h3>
+                    <p class="card-body-text">
+                        To drive meaningful growth for our clients by crafting 
+                        innovative, data-driven marketing strategies that 
+                        create lasting digital success.
+                    </p>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="dark-card">
+                    <div class="card-icon-container">
+                        <i class="fas fa-binoculars"></i>
+                    </div>
+                    <h3 class="card-heading">Vision</h3>
+                    <p class="card-body-text">
+                        To ignite a powerful digital revolution by building 
+                        authentic connections and delivering transformative 
+                        brand experiences.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- custom html css js silder -->
+         <style>
+     
+
+        /* 2. Slider Container (Viewport) */
+        .slider-container {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden; /* Only one slide should be visible at a time */
+        }
+
+        /* 3. Slider Track (Holds all slides side-by-side) */
+        .slider-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth animation */
+        }
+
+        /* 4. Individual Slide Styling */
+        .slide {
+            flex-shrink: 0; /* Prevents slides from shrinking */
+            width: 100vw; /* Each slide takes exactly 100% of the viewport width */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Slide Specific Styles */
+        .slide-1 { background-color: #0b4f6c; } /* Dark Teal */
+        .slide-2 { background-color: #8c2727; } /* Deep Crimson */
+        .slide-3 { background-color: #38761d; } /* Forest Green */
+        .slide-4 { background-color: #741b47; } /* Deep Violet */
+        
+        .slide h2 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        
+        .slide p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            font-weight: 300;
+        }
+
+        /* 5. Navigation Buttons */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 1.5rem;
+            transition: background 0.3s;
+            border-radius: 8px;
+        }
+        
+        .nav-button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #prev-button {
+            left: 20px;
+        }
+
+        #next-button {
+            right: 20px;
+        }
+
+        /* 6. Pagination Dots */
+        .pagination-dots {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .slide h2 {
+                font-size: 2.5rem;
+            }
+            .slide p {
+                font-size: 1rem;
+            }
+            .nav-button {
+                padding: 10px 15px;
+                font-size: 1.2rem;
+            }
+            #prev-button {
+                left: 10px;
+            }
+            #next-button {
+                right: 10px;
+            }
+        }
+    </style>
+
+
+    <div class="slider-container" role="region" aria-label="Image Carousel">
+        <div class="slider-track" id="slider-track">
+            
+            <!-- Slide 1 -->
+            <div class="slide slide-1" role="group" aria-label="Slide 1 of 4">
+                <i class="fas fa-microchip fa-4x" style="margin-bottom: 20px;"></i>
+                <h2>Pure JavaScript Power</h2>
+                <p>This slider is created exclusively with HTML, CSS, and vanilla JavaScript for maximum performance and control.</p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide-2" role="group" aria-label="Slide 2 of 4">
+                <i class="fas fa-hand-holding-usd fa-4x" style="margin-bottom: 20px;"></i>
+                <h2>Responsive & Full Screen</h2>
+                <p>It occupies 100% of the viewport height and width and adjusts perfectly to all screen sizes.</p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide slide-3" role="group" aria-label="Slide 3 of 4">
+                <i class="fas fa-cogs fa-4x" style="margin-bottom: 20px;"></i>
+                <h2>Custom Transition</h2>
+                <p>The transition is managed using the CSS `transform: translateX()` property for smooth, hardware-accelerated movement.</p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide slide-4" role="group" aria-label="Slide 4 of 4">
+                <i class="fas fa-bullhorn fa-4x" style="margin-bottom: 20px;">"></i>
+                <h2>No External Libraries</h2>
+                <p>No Swiper, no jQuery, just the core web technologies.</p>
+            </div>
+            
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prev-button" class="nav-button" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-button" class="nav-button" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+        <!-- Pagination Dots -->
+        <div class="pagination-dots" id="pagination-dots">
+            <!-- Dots will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // --- Core Slider Logic ---
+        
+        // DOM element references
+        const sliderTrack = document.getElementById('slider-track');
+        const slides = Array.from(sliderTrack.children);
+        const nextButton = document.getElementById('next-button');
+        const prevButton = document.getElementById('prev-button');
+        const dotsContainer = document.getElementById('pagination-dots');
+
+        // State variables
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        /**
+         * Moves the slider track to the specified index and updates the UI.
+         * @param {number} index The index of the slide to display.
+         */
+        function goToSlide(index) {
+            // Calculate the new index, wrapping around if needed
+            if (index >= totalSlides) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            // Calculate the amount to translate (shift) the track
+            const offset = -currentIndex * 100;
+            sliderTrack.style.transform = `translateX(${offset}vw)`;
+            
+            updateDots();
+        }
+
+        /**
+         * Updates the active state of the pagination dots.
+         */
+        function updateDots() {
+            const dots = Array.from(dotsContainer.children);
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        /**
+         * Generates the pagination dots based on the number of slides.
+         */
+        function createDots() {
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+                dot.setAttribute('role', 'button');
+                dot.dataset.index = i; // Store the slide index in the data attribute
+                
+                dot.addEventListener('click', () => {
+                    goToSlide(i);
+                });
+                dotsContainer.appendChild(dot);
+            }
+            updateDots(); // Initialize the first dot as active
+        }
+
+        // --- Event Listeners and Initialization ---
+        
+        nextButton.addEventListener('click', () => {
+            goToSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', () => {
+            goToSlide(currentIndex - 1);
+        });
+
+        // Initialize the slider components
+        document.addEventListener('DOMContentLoaded', () => {
+            createDots();
+            // Start on the first slide (index 0)
+            goToSlide(0); 
+        });
+
+    </script>
+
+    <!-- custom html css js silder -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 2,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
+</body>
+</html>
